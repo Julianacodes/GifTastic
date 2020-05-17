@@ -34,6 +34,7 @@ $(document).ready(function(){
                 displayDiv.append(pRating)
 
                 $("#display-images").append(displayDiv);
+                
             }
         });
     }

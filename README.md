@@ -1,9 +1,9 @@
 # GifTastic
 
-##Overview
+## Overview
 I made a dynamic web page using GIPHY API that populates Disney characters giphs.
 
-##Full Break Down
+## Full Break Down
 * Please select one of the Disney character buttons to see some giphs of that character. 
 * In order to make the giphy play, please click on it. 
 * To stop the giphy from playing, please click on it again. 
