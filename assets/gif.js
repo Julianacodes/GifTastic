@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var displayedButtons = ['Olaf', 'Mushu', 'Peter Pan', 'Mulan', 'Stitch', 'Pocahontas'];
+    var Topics = ['Olaf', 'Mushu', 'Peter Pan', 'Mulan', 'Stitch', 'Pocahontas'];
 
 
     function displayImg() {
@@ -42,13 +42,13 @@ $(document).ready(function(){
 
         $("#display-buttons").empty();
 
-        for (var i = 0; i < displayedButtons.length; i++) {
+        for (var i = 0; i < Topics.length; i++) {
 
             var newButton = $("<button>")
             newButton.attr("class", "btn btn-default");
             newButton.attr("id", "input")
-            newButton.attr("data-name", displayedButtons[i]);
-            newButton.text(displayedButtons[i]);
+            newButton.attr("data-name", Topics[i]);
+            newButton.text(Topics[i]);
             $("#display-buttons").append(newButton);
         }
     }
@@ -70,17 +70,22 @@ $(document).ready(function(){
         }
     }
 
-    $("#submitPress").on("click", function () {
+    
+    $(document).on('click', '#submitPress', function () {
+        if ($('#user-input').val().trim() == '') {
+            alert('please add character');
+        }
+        else {
+            var disneyc = $('#user-input').val().trim();
+            Topics.push(disneyc);
+            $('#user-input').val('');
+            renderButtons();
+            imageChangeState();
+            return false;
+            
+        }
 
-        var input = $("#user-input").val().trim();
-        form.reset();
-        displayedButtons.push(input);
-
-        renderButtons();
-
-        return false;
-    })
-
+    });
     renderButtons();
 
     $(document).on("click", "#input", displayImg);
