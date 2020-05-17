@@ -13,7 +13,8 @@ img {
 }
 
 label {
-    color: #fff;
+    color:blue;
+    font-weight: 600;
 }
 
 .btn-default {
