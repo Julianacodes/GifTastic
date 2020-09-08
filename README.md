@@ -9,4 +9,7 @@ I made a dynamic web page using GIPHY API that populates Disney characters giphs
 * To stop the giphy from playing, please click on it again. 
 * You can also enter a disney character in the search box if you would like to search for other Disney character gifs. 
 * Once you submit a character a button will populate for you with that character name. 
-* If you click submit without inputting a name, an alert will let you know to enter a characters name to search. 
+* If you click submit without inputting a name, an alert will let you know to enter a characters name to search.
+
+## Try it out!
+Live Link: https://julianacodes.github.io/GifTastic/
